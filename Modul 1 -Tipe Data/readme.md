@@ -175,4 +175,98 @@ int main()
 ![Output 1](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%201%20-Tipe%20Data/gambar/Output1.png)
 Kode diatas adalah contoh penggunaan dari tipe data primitif. Fungsi pertama digunakan untuk mengecek angka apakah ganjil atau genap sedangkan fungsi kedua untuk membandingkan antara angka pertama atau kedua. 
 Kesimpulanya adalah tipe data ini merupakan tipe data default, yang mana tidak ada fleksibilitas dalam penggunaanya namun tipe data ini yang menjadi pondasi dari seluruh program c++.
+### Full code Screenshot
+![Code 1](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%201%20-Tipe%20Data/gambar/Code1.png)
+
+### 2. Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya
+``` c++
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+// inisialisasi class
+class Game
+{
+public:
+    string nama;
+    string genre;
+    int tahun;
+    string size;
+
+    // fungsi menampilkan info class
+    void displayInfo()
+    {
+        cout << "Game " << nama << " dengan genre " << genre << " di publish tahun " << tahun << " dengan size " << size << endl;
+    }
+};
+
+// inisialisasi struct
+struct Hero
+{
+    const char *name;
+    const char *role;
+    string type;
+};
+
+int main()
+{
+    // deklarasi class
+    Game game1;
+
+    game1.nama = "Dark Souls";
+    game1.genre = "RPG Linear";
+    game1.tahun = 2018;
+    game1.size = "9,2 GB";
+    game1.displayInfo();
+
+    // deklarasi struct
+    Hero hero1;
+    hero1.name = "John Dark Soul";
+    hero1.role = "Sorcerer";
+    hero1.type = "DPS";
+
+    cout << endl;
+    cout << "Karakter" << endl;
+    cout << "Name: " << hero1.name << endl;
+    cout << "Role: " << hero1.role << endl;
+    cout << "Type: " << hero1.type << endl;
+
+    return 0;
+}
+```
+### Output
+![Output 2](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%201%20-Tipe%20Data/gambar/Output2.png)
+Class merupakan tipe data defaultnya adalah private, jadi jika objek anggota dari class itu sendiri ingin dipublikasikan, maka harus menyertakan public di potongan kode tersebut Sedangakan Struct atau structure merupakan tipe data yang menyimpan beberapa data dengan default public, Struktur bermanfaat untuk mengelompokan sejumlah data dengan tipe yang berlainan[1]. Kode diatas merupakan contoh penggunaan class dan struct, pada class menyertakan public agar kode bisa diakses di int main dan pada struct karena defaultnya public jadi langsung inisialisasi variabel.
+### Full code Screenshot
+![Code 2](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%201%20-Tipe%20Data/gambar/Code2.png)
+
+### 3. Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map
+```c++
+#include <iostream>
+#include <map>
+
+using namespace std;
+
+int main()
+{
+    // insialisasi dan deklarasi map
+    map<string, int> dataDamage;
+
+    // isi value map
+    dataDamage["Strength"] = 650;
+    dataDamage["Dexterity"] = 500;
+    dataDamage["Intellegence"] = 800;
+    dataDamage["Faith"] = 700;
+
+    cout << "Informasi Damage Build" << endl;
+    
+    // perulangan range based loop untuk menampilkan map
+    for (auto& entry : dataDamage) {
+        cout << "Build " << entry.first << " Damage: " << entry.second << endl;
+    }
+
+    return 0;
+}
+```
 
