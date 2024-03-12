@@ -269,4 +269,18 @@ int main()
     return 0;
 }
 ```
+### Output
+![Output 3](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%201%20-Tipe%20Data/gambar/Output3.png)
+Kode diatas merupakan penggunaan map dalam c++, dimulai dari insialisasi map beserta tipe datanya kemudian pengisian map pada int main lalu terakhir dengan perulangan for range based loop dengan menggunakan `auto` mencetak map tersebut. Perbedaan antara array dan map terletak pada tipe data indeks pada map yang memungkinkan untuk berupa tipe data selain integer[2].
+### Full code Screenshot
+![Code 3](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%201%20-Tipe%20Data/gambar/Code3.png)
 
+## Kesimpulan
+Tipe data adalah klasifikasi atau pengelompokan data berdasarkan sifat atau ciri-ciri tertentu. Setiap jenis tipe data memiliki fungsi yang berbeda-beda yang memungkinkan programmer untuk lebih leluasa membuat atau menciptakan suatu logika program yang lebih kompleks dan efisien juga digunakan oleh compiler untuk memahami cara data tersebut digunakan dalam program. Ada tiga tipe data utama, yaitu primitif, abstak, dan koleksi. 
+- Tipe data primitif merupakan tipe data default yang menjadi pondasi
+- Tipe data abstrak merupakan tipe data yang dibuat oleh programmer yang biasa digunakan di pemograman OOP.
+- Tipe data kolektif merupakan tipe data yang digunakan untuk menyimpan data secara bersamaan.
+
+## Referensi
+[1] Akbar, Ramadhani. Struct dan Class. boltremjaya.wordpress.com; 2013. https://boltremjaya.wordpress.com/2013/09/16/struct-dan-class/
+[2] Adam, Rian. TUTORIAL STRUKTUR DATA MAP PADA C++. structilmy.com; 2020. https://structilmy.com/blog/2020/08/08/tutorial-struktur-data-map-pada-c/
