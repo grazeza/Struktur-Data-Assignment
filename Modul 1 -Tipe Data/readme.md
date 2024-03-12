@@ -1,5 +1,5 @@
-<center># Laporan Praktikum Modul Tipe Data</center>
-<center>Fahreza Ilham Wicaksono</center>
+# Laporan Praktikum Modul Tipe Data
+Fahreza Ilham Wicaksono
 
 ## Dasar Teori
 Tipe data merpukan pengelompokan data berdasarkan ciri-cirinya. Jenis ini mempunya fungsi yang berbeda-beda yang digunakan oleh compiler untuk mengetahui bagaimana sebuah data digunakan. Ada 3 tipe data yaitu primitif, abstak, dan koleksi.
@@ -12,7 +12,7 @@ Tipe data Koleksi merupakan tipe data yang digunakan untuk menyimpan data secara
 
 ## Guided
 ### 1. Tipe data primitf
-```
+```c++
 #include <iostream>
 
 using namespace std;
@@ -52,7 +52,7 @@ int main()
 Kode diatas merupakan implementasi dari penggunaan tipe data primitif `float`, yang berfungsi seperti kalkulator sederhana.
 
 ### Tipe data abstark
-```
+```c++
 #include <iostream>
 #include <stdio.h>
 
@@ -96,7 +96,7 @@ int main()
 Kode diatas merupakan implementasi tipe data abstak yaitu `struct`, yang berfungsi untuk menyimpan tipe data yang berbeda di suatu variabel.
 
 ### Tipe data koleksi
-```
+```c++
 #include <iostream>
 
 using namespace std;
