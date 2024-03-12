@@ -283,4 +283,5 @@ Tipe data adalah klasifikasi atau pengelompokan data berdasarkan sifat atau ciri
 
 ## Referensi
 [1] Akbar, Ramadhani. Struct dan Class. boltremjaya.wordpress.com; 2013. https://boltremjaya.wordpress.com/2013/09/16/struct-dan-class/
+
 [2] Adam, Rian. TUTORIAL STRUKTUR DATA MAP PADA C++. structilmy.com; 2020. https://structilmy.com/blog/2020/08/08/tutorial-struktur-data-map-pada-c/
