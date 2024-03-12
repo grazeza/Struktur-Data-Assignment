@@ -172,4 +172,4 @@ int main()
 }
 ```
 ### Output
-![Output 1](https://github.com/grazeza/Struktur-Data-Assignment/main/)
+![Output 1](https://github.com/grazeza/Struktur-Data-Assignment/tree/main/Modul%201%20-Tipe%20Data/gambar/Output1.png)
