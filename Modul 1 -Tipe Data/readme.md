@@ -51,7 +51,7 @@ int main()
 ```
 Kode diatas merupakan implementasi dari penggunaan tipe data primitif `float`, yang berfungsi seperti kalkulator sederhana.
 
-### Tipe data abstark
+### 2. Tipe data abstark
 ```c++
 #include <iostream>
 #include <stdio.h>
@@ -95,7 +95,7 @@ int main()
 ```
 Kode diatas merupakan implementasi tipe data abstak yaitu `struct`, yang berfungsi untuk menyimpan tipe data yang berbeda di suatu variabel.
 
-### Tipe data koleksi
+### 3. Tipe data koleksi
 ```c++
 #include <iostream>
 
@@ -121,3 +121,55 @@ int main()
 }
 ```
 Kode diatas merupakan implementasi tipe data koleksi `array`, yang berfungsi untuk menyimpan berbagai data dengan tipe data yang sama di suatu variabel.
+
+## Unguided
+### 1. Buatlah program menggunakan tipe data primitif minimal dua fungsi dan bebas. Menampilkan program, jelaskan program tersebut dan ambil kesimpulan dari materi tipe data primitif! 
+``` c++
+#include <iostream>
+
+using namespace std;
+
+// fungsi cek even or odd number
+void JenisAngka(int angka)
+{
+    if (angka % 2 == 0) // jika habis dibagi 2
+    {
+        cout << "Amgka yang anda inputkan merupakan angka genap" << endl;
+    }
+    else
+    {
+        cout << "Amgka yang anda inputkan merupakan angka ganjil" << endl;
+    }
+}
+
+// fungsi banfing angka 1 dan angka 2
+void Bandingkan(int angka1, int angka2)
+{
+    if (angka1 > angka2)
+    {
+        cout << "Angka pertama lebih besar daripada angka kedua" << endl;
+    }
+    else if (angka1 < angka2)
+    {
+        cout << "Angka kedua lebih besar daripada angka pertama" << endl;
+    }
+    else if (angka1 == angka2)
+    {
+        cout << "Angka pertama sama dengan angka kedua" << endl;
+    }
+}
+
+int main()
+{
+    cout << "Fungsi Pertama" << endl;
+    JenisAngka(789);
+    JenisAngka(234);
+
+    cout << "Fungsi Kedua" << endl;
+    Bandingkan(3, 7);
+    Bandingkan(123, 90);
+    Bandingkan(4,4);
+}
+```
+### Output
+![Output 1](https://github.com/grazeza/Struktur-Data-Assignment/main/)
