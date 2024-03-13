@@ -1,4 +1,4 @@
-# Laporan Praktikum Modul Tipe Data
+# <h1 class="center"> Laporan Praktikum Modul Tipe Data </h1>
 Fahreza Ilham Wicaksono
 
 ## Dasar Teori
