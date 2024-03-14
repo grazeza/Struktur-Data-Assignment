@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "c:/Users/ASUS/Documents/Kuliah/Struktur Data/Github/Struktur-Data-Assignment/Modul 2 - Array/unguided",
+      "program": "c:/Users/ASUS/Documents/Kuliah/Struktur Data/Github/Struktur-Data-Assignment/Modul 2 - Array/unguided/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
