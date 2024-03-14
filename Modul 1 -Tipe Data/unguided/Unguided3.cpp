@@ -15,9 +15,10 @@ int main()
     dataDamage["Faith"] = 700;
 
     cout << "Informasi Damage Build" << endl;
-    
+
     // perulangan range based loop untuk menampilkan map
-    for (auto& entry : dataDamage) {
+    for (auto &entry : dataDamage)
+    {
         cout << "Build " << entry.first << " Damage: " << entry.second << endl;
     }
 
