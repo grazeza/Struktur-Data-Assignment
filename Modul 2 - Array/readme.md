@@ -1,7 +1,6 @@
 # <h1 class="center"> Laporan Praktikum Modul Array </h1>
-::: center
-Fahreza Ilham Wicaksono
-:::
+<p align="center"> Fahreza Ilham Wicaksono </p>
+
 
 ## Dasar Teori
 Tipe data merpukan pengelompokan data berdasarkan ciri-cirinya. Jenis ini mempunya fungsi yang berbeda-beda yang digunakan oleh compiler untuk mengetahui bagaimana sebuah data digunakan. Ada 3 tipe data yaitu primitif, abstak, dan koleksi.
