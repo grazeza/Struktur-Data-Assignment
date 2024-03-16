@@ -3,18 +3,19 @@
 
 
 ## Dasar Teori
-Tipe data merpukan pengelompokan data berdasarkan ciri-cirinya. Jenis ini mempunya fungsi yang berbeda-beda yang digunakan oleh compiler untuk mengetahui bagaimana sebuah data digunakan. Ada 3 tipe data yaitu primitif, abstak, dan koleksi.
-### - Tipe data Primitif
-Tipe data primitif merupakan tipe data yang sudah ditentukan oleh program c++ itu sendiri. Contohnya yaitu int, float, string, boolean dan char.
-### - Tipe data Abstrak
-Tipe data abstark adalah tipe data yang dibuat atau diciptakan oleh programmer itu sendiri.
-### - Tipe data Koleksi
-Tipe data Koleksi merupakan tipe data yang digunakan untuk menyimpan data secara bersamaan di suatu variabel. Contohnya array, vector, dan map.
+Array adalah struktur data mendasar yang terdiri dari elemen-elemen yang memiliki indeks numerik, dimulai dari 0 dan terus bertambah sesuai panjang data. Meskipun penggunaan memori array relatif sedikit, fleksibilitasnya terbatas. Berikut adalah beberapa tipe array yang umum digunakan:
+### - Array Satu Dimensi
+Array satu dimensi adalah kumpulan data dengan tipe yang sama yang disusun dalam suatu struktur. Dalam analogi tabel, array satu dimensi dapat dianggap sebagai tabel dengan hanya satu kolom dan beberapa baris. Setiap elemen dalam array memiliki indeks numerik yang dimulai dari 0 dan terus bertambah secara berurutan. 
+### - Array Dua Dimensi
+Sama seperti array satu dimensi, array dua dimensi berarti memunkinkan array untuk memiliki lebih dari satu kolom atau baris.
+### - Array Multidimensi
+Array multidimensi memperluas konsep array dua dimensi dengan memungkinkan untuk menyimpan data dalam tiga dimensi atau lebih. Ini berarti array multidimensi dapat memiliki lebih dari dua indeks untuk mengakses elemen-elemennya. Contoh multidimensi lainnya adalah array tiga dimensi, empat dimensi, dan seterusnya. Array multidimensi memungkinkan penyimpanan data yang lebih besar dan kompleks.
 
 ## Guided
 ### 1. Program Input Array Tiga Dimensi 
 ```c++
 #include <iostream>
+
 
 using namespace std;
 
@@ -71,7 +72,7 @@ int main()
     }
 }
 ```
-Kode diatas merupakan implementasi dari penggunaan tipe data primitif `float`, yang berfungsi seperti kalkulator sederhana.
+Kode diatas merupakan implementasi dari penggunaan array `multidimensi`, kode tersebut berfungsi untuk mengisi array tiga dimensi sesuai yang diinputkan oleh user serta menampilkan array tersebut.
 
 ### 2. Program Mencari Nilai Maksimal pada Array
 ```c++
@@ -110,7 +111,7 @@ int main()
     return 0;
 }
 ```
-Kode diatas merupakan implementasi tipe data abstak yaitu `struct`, yang berfungsi untuk menyimpan tipe data yang berbeda di suatu variabel.
+Kode diatas merupakan implementasi dari penggunaan `array satu dimensi` dan algoritma `searching`, kode tersebut berfungsi untuk mengisi array sesuai dengan yang diinputkan oleh user lalu akan mengecek nilai maksimum dari array tersebut.
 
 ## Unguided
 ### 1. Buatlah program untuk menampilkan Output seperti berikut dengan data yang diinputkan oleh user!
@@ -173,8 +174,7 @@ int main()
 ```
 ### Output
 ![Output 1](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%202%20-%20Array/gambar/Output1.png)
-Kode diatas adalah contoh penggunaan dari tipe data primitif. Fungsi pertama digunakan untuk mengecek angka apakah ganjil atau genap sedangkan fungsi kedua untuk membandingkan antara angka pertama atau kedua. 
-Kesimpulanya adalah tipe data ini merupakan tipe data default, yang mana tidak ada fleksibilitas dalam penggunaanya namun tipe data ini yang menjadi pondasi dari seluruh program c++.
+Kode diatas adalah contoh penggunaan `array satu dimensi` dan algoritma `searching`. Pertama program akan meminta user unutk menentukan indeks array yang nanti akan diinputkan user, lalu program akan mengecek nilai yang diinputkan tadi apakah bernilai ganjil atau genap yang kemudian akan dimasukkan ke array yang sudah diinisialisasi manual. Terakhir program akan mencetak array keseluruhan, array bilangan genap, dan array bilangan ganjil.
 
 ### 2. Buatlah program Input array tiga dimensi (seperti pada guided) tetapi jumlah atau ukuran elemennya diinputkan oleh user!
 ``` c++
@@ -256,7 +256,7 @@ int main()
 ```
 ### Output
 ![Output 2](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%202%20-%20Array/gambar/Output2.png)
-Class merupakan tipe data defaultnya adalah private, jadi jika objek anggota dari class itu sendiri ingin dipublikasikan, maka harus menyertakan public di potongan kode tersebut Sedangakan Struct atau structure merupakan tipe data yang menyimpan beberapa data dengan default public, Struktur bermanfaat untuk mengelompokan sejumlah data dengan tipe yang berlainan[1]. Kode diatas merupakan contoh penggunaan class dan struct, pada class menyertakan public agar kode bisa diakses di int main dan pada struct karena defaultnya public jadi langsung inisialisasi variabel.
+Kode diatas merupakan implementasi dari penggunaan array `multidimensi`, kode tersebut berfungsi untuk mengisi array tiga dimensi yang indeks dan isinya dinputkan secara manual oleh user.
 
 ### 3. Buatlah program menu untuk mencari nilai Maksimum, Minimum dan Nilai rata – rata dari suatu array dengan input yang dimasukan oleh user! 
 ```c++
@@ -371,15 +371,22 @@ int main()
 ```
 ### Output
 ![Output 3](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%202%20-%20Array/gambar/Output3.png)
-Kode diatas merupakan penggunaan map dalam c++, dimulai dari insialisasi map beserta tipe datanya kemudian pengisian map pada int main lalu terakhir dengan perulangan for range based loop dengan menggunakan `auto` mencetak map tersebut. Perbedaan antara array dan map terletak pada tipe data indeks pada map yang memungkinkan untuk berupa tipe data selain integer[2].
+Pertama program akan menampilkan sebuah menu, user diminta untuk memilih menu tersebut, jika user memilih “Input Array” maka user diminta untuk menginputkan 10 bilangan yang mana akan dimasukkan ke array yang sudah ditentukan indeksnya yaitu 10. Lalu jika user memilih “Tampil Array” program akan mencetak array yang tadi sudah user input. Jika user memilih “Cari Nilai Minimum” maka program akan mencari nilai mininum dari array tadi, begitu juga “Cari Nilai Maksimum” program akan mencari nilai maksimumnya. Terakhir jika user memilih “Hitung Rata-Rata” maka program akan mencari nilai rata rata dari array tadi lalu mencetaknya.
 
 ## Kesimpulan
-Tipe data adalah klasifikasi atau pengelompokan data berdasarkan sifat atau ciri-ciri tertentu. Setiap jenis tipe data memiliki fungsi yang berbeda-beda yang memungkinkan programmer untuk lebih leluasa membuat atau menciptakan suatu logika program yang lebih kompleks dan efisien juga digunakan oleh compiler untuk memahami cara data tersebut digunakan dalam program. Ada tiga tipe data utama, yaitu primitif, abstak, dan koleksi. 
-- Tipe data primitif merupakan tipe data default yang menjadi pondasi
-- Tipe data abstrak merupakan tipe data yang dibuat oleh programmer yang biasa digunakan di pemograman OOP.
-- Tipe data kolektif merupakan tipe data yang digunakan untuk menyimpan data secara bersamaan.
+Array adalah struktur data mendasar yang terdiri dari elemen-elemen yang memiliki indeks numerik, dimulai dari 0 dan terus bertambah sesuai panjang data. Meskipun penggunaan memori array relatif sedikit, fleksibilitasnya terbatas. Beberapa tipe array yang umum digunakan adalah array satu dimensi, array dua dimensi dan array multidimensi. Berikut beberapa kelebihan dan kekurangan array: 
+- Kelebihan Array :
+1. Array sangat  baik jika digunakan untuk mengakses secara acak. Karena secara acak index di array dapat secara langsung diakses tanpa melalui index lain
+2. Jika berada di suatu lokasi index sangatlah mudah untuk mencari ke index tersebut
+3. Jika index array adalah nilai - nilai tersendiri dan semuanya harus terjaga, maka penggunaan penyimpanannya sangatlah tepat
+4. Tidak mudah crash
+5. Cepatnya mengeksekusi data
+6. Tidak banyak memekan memory
+
+- Kekurangan Array :
+1. Ukuran file yang sangatlah besar
+2. Tidak efisien dalam penggunaan memory
+3. jika array bertipe homogen , maka user tidak dapat mempunyai arry diman satu index adalah karakter utamanya [1]
 
 ## Referensi
-[1] Akbar, Ramadhani. Struct dan Class. boltremjaya.wordpress.com; 2013. https://boltremjaya.wordpress.com/2013/09/16/struct-dan-class/
-
-[2] Adam, Rian. TUTORIAL STRUKTUR DATA MAP PADA C++. structilmy.com; 2020. https://structilmy.com/blog/2020/08/08/tutorial-struktur-data-map-pada-c/
+[1] Taufiqqurahman, M.. Kelebihan dan Kekurangan Array. boltremjaya.wordpress.com; 2021. https://kelompok1ka2.blogspot.com/2015/10/kelebihan-dan-kekurangan-array.html
