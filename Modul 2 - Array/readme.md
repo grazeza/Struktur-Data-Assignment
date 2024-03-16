@@ -172,7 +172,7 @@ int main()
 }
 ```
 ### Output
-![Output 1](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%201%20-Tipe%20Data/gambar/Output1.png)
+![Output 1](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%202%20-%20Array/gambar/Output1.png)
 Kode diatas adalah contoh penggunaan dari tipe data primitif. Fungsi pertama digunakan untuk mengecek angka apakah ganjil atau genap sedangkan fungsi kedua untuk membandingkan antara angka pertama atau kedua. 
 Kesimpulanya adalah tipe data ini merupakan tipe data default, yang mana tidak ada fleksibilitas dalam penggunaanya namun tipe data ini yang menjadi pondasi dari seluruh program c++.
 
@@ -255,7 +255,7 @@ int main()
 }
 ```
 ### Output
-![Output 2](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%201%20-Tipe%20Data/gambar/Output2.png)
+![Output 2](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%202%20-%20Array/gambar/Output2.png)
 Class merupakan tipe data defaultnya adalah private, jadi jika objek anggota dari class itu sendiri ingin dipublikasikan, maka harus menyertakan public di potongan kode tersebut Sedangakan Struct atau structure merupakan tipe data yang menyimpan beberapa data dengan default public, Struktur bermanfaat untuk mengelompokan sejumlah data dengan tipe yang berlainan[1]. Kode diatas merupakan contoh penggunaan class dan struct, pada class menyertakan public agar kode bisa diakses di int main dan pada struct karena defaultnya public jadi langsung inisialisasi variabel.
 
 ### 3. Buatlah program menu untuk mencari nilai Maksimum, Minimum dan Nilai rata – rata dari suatu array dengan input yang dimasukan oleh user! 
@@ -370,7 +370,7 @@ int main()
 
 ```
 ### Output
-![Output 3](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%201%20-Tipe%20Data/gambar/Output3.png)
+![Output 3](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%202%20-%20Array/gambar/Output3.png)
 Kode diatas merupakan penggunaan map dalam c++, dimulai dari insialisasi map beserta tipe datanya kemudian pengisian map pada int main lalu terakhir dengan perulangan for range based loop dengan menggunakan `auto` mencetak map tersebut. Perbedaan antara array dan map terletak pada tipe data indeks pada map yang memungkinkan untuk berupa tipe data selain integer[2].
 
 ## Kesimpulan
