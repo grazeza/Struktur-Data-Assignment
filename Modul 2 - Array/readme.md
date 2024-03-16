@@ -1,4 +1,4 @@
-# <h1 class="center"> Laporan Praktikum Modul Array </h1>
+# <h1 align="center"> Laporan Praktikum Modul Array </h1>
 <p align="center"> Fahreza Ilham Wicaksono </p>
 
 
@@ -12,7 +12,7 @@ Tipe data abstark adalah tipe data yang dibuat atau diciptakan oleh programmer i
 Tipe data Koleksi merupakan tipe data yang digunakan untuk menyimpan data secara bersamaan di suatu variabel. Contohnya array, vector, dan map.
 
 ## Guided
-### 1. Tipe data primitf
+### 1. Program Input Array Tiga Dimensi 
 ```c++
 #include <iostream>
 
@@ -20,261 +20,358 @@ using namespace std;
 
 int main()
 {
-    char op;
-    float num1, num2;
-    cout << "Masukkan jenis operator: ";
-    cin >> op;
-    cout << "Iputkan angka pertama: ";
-    cin >> num1;
-    cout << "Iputkan angka kedua: ";
-    cin >> num2;
+    // deklarasi array
+    int arr[2][3][3];
 
-    switch (op)
+    // input elemen
+    for (int x = 0; x < 2; x++)
     {
-    case '+':
-        cout << num1 + num2;
-        break;
-    case '-':
-        cout << num1 - num2;
-        break;
-    case '*':
-        cout << num1 * num2;
-        break;
-    case '/':
-        cout << num1 / num2;
-        break;
-    default:
-        cout << "Error! operator is not valid" << endl;
+        for (int y = 0; y < 3; y++)
+        {
+            for (int z = 0; z < 3; z++)
+            {
+                cout << "Input Array[" << x << "][" << y << "][" << z << "] = " << ends;
+                cin >> arr[x][y][z];
+            }
+        }
+
+        cout << endl;
     }
 
-    return 0;
+    // input elemen
+    cout << endl;
+    for (int x = 0; x < 2; x++)
+    {
+        for (int y = 0; y < 3; y++)
+        {
+            for (int z = 0; z < 3; z++)
+            {
+                cout << "Data Array[" << x << "][" << y << "][" << z << "] = " << arr[x][y][z] << ends;
+                cout << endl;
+            }
+        }
+
+        cout << endl;
+    }
+
+    // output array
+    for (int x = 0; x < 2; x++)
+    {
+        for (int y = 0; y < 3; y++)
+        {
+            for (int z = 0; z < 3; z++)
+            {
+                cout << arr[x][y][z] << " " << ends;
+            }
+
+            cout << endl;
+        }
+
+        cout << endl;
+    }
 }
 ```
 Kode diatas merupakan implementasi dari penggunaan tipe data primitif `float`, yang berfungsi seperti kalkulator sederhana.
 
-### 2. Tipe data abstark
+### 2. Program Mencari Nilai Maksimal pada Array
 ```c++
 #include <iostream>
-#include <stdio.h>
 
 using namespace std;
 
-// struct
-struct Mahasiswa
-{
-    const char *name;
-    const char *address;
-    int age;
-};
-
 int main()
 {
-    // inisialisasi struct
-    struct Mahasiswa mhs1, mhs2;
+    int maks, a, i = 1, lokasi;
+    cout << "Masukkan panjang array: ";
+    cin >> a;
 
-    // pengisian value
-    mhs1.name = "Fahreza";
-    mhs1.address = "Ketenger";
-    mhs1.age = 18;
+    int array[a];
+    cout << "Masukkan " << a << " angka: \n";
 
-    mhs2.name = "Evan";
-    mhs2.address = "Semaya";
-    mhs2.age = 19;
+    for (int i = 0; i < a; i++)
+    {
+        cout << "Array ke-" << (i) << ": ";
+        cin >> array[i];
+    }
 
-    // mencetak isi struct
-    printf("## Mahasiswa 1 ##\n");
-    printf("Nama: %s\n", mhs1.name);
-    printf("Alamat: %s\n", mhs1.address);
-    printf("Umur: %d\n", mhs1.age);
-    printf("## Mahasiswa 2 ##\n");
-    printf("Nama: %s\n", mhs2.name);
-    printf("Alamat: %s\n", mhs2.address);
-    printf("Umur: %d\n", mhs2.age);
+    maks = array[0];
+
+    for (int i = 0; i < a; i++)
+    {
+        if (array[i] > maks)
+        {
+            maks = array[i];
+            lokasi = i;
+        }
+    }
+
+    cout << "Nilai maksimum adalah " << maks << " berada di Array ke " << lokasi << endl;
 
     return 0;
 }
 ```
 Kode diatas merupakan implementasi tipe data abstak yaitu `struct`, yang berfungsi untuk menyimpan tipe data yang berbeda di suatu variabel.
 
-### 3. Tipe data koleksi
-```c++
-#include <iostream>
-
-using namespace std;
-
-int main()
-{
-    // deklarasi dan inisalisasi array
-    int nilai[5];
-    nilai[0] = 75;
-    nilai[1] = 80;
-    nilai[2] = 85;
-    nilai[3] = 60;
-    nilai[4] = 90;
-
-    // mencetak array
-    cout << "Isi array pertama :" << nilai[0] << endl;
-    cout << "Isi array kedua :" << nilai[1] << endl;
-    cout << "Isi array ketiga :" << nilai[2] << endl;
-    cout << "Isi array keempat :" << nilai[3] << endl;
-    cout << "Isi array kelima :" << nilai[4] << endl;
-    return 0;
-}
-```
-Kode diatas merupakan implementasi tipe data koleksi `array`, yang berfungsi untuk menyimpan berbagai data dengan tipe data yang sama di suatu variabel.
-
 ## Unguided
-### 1. Buatlah program menggunakan tipe data primitif minimal dua fungsi dan bebas. Menampilkan program, jelaskan program tersebut dan ambil kesimpulan dari materi tipe data primitif! 
+### 1. Buatlah program untuk menampilkan Output seperti berikut dengan data yang diinputkan oleh user!
 ``` c++
 #include <iostream>
 
 using namespace std;
 
-// fungsi cek even or odd number
-void JenisAngka(int angka)
-{
-    if (angka % 2 == 0) // jika habis dibagi 2
-    {
-        cout << "Amgka yang anda inputkan merupakan angka genap" << endl;
-    }
-    else
-    {
-        cout << "Amgka yang anda inputkan merupakan angka ganjil" << endl;
-    }
-}
-
-// fungsi banfing angka 1 dan angka 2
-void Bandingkan(int angka1, int angka2)
-{
-    if (angka1 > angka2)
-    {
-        cout << "Angka pertama lebih besar daripada angka kedua" << endl;
-    }
-    else if (angka1 < angka2)
-    {
-        cout << "Angka kedua lebih besar daripada angka pertama" << endl;
-    }
-    else if (angka1 == angka2)
-    {
-        cout << "Angka pertama sama dengan angka kedua" << endl;
-    }
-}
-
 int main()
 {
-    cout << "Fungsi Pertama" << endl;
-    JenisAngka(789);
-    JenisAngka(234);
+    int data, indeks;
+    int countGenap = 0, countGanjil = 0; // untuk indeks array genap dan ganjil
+    cout << "Masukkan indeks array: ";
+    cin >> indeks;
 
-    cout << "Fungsi Kedua" << endl;
-    Bandingkan(3, 7);
-    Bandingkan(123, 90);
-    Bandingkan(4,4);
+    int array[indeks], bilanganGenap[indeks], bilanganGanjil[indeks];
+    for (int i = 0; i < indeks; i++)
+    {
+        cout << "Masukkan data ke-" << i + 1 << ": ";
+        cin >> array[i];
+
+        // pengecekan nilai ganjil atau genap
+        if (array[i] % 2 == 0)
+        {
+            bilanganGenap[countGenap] = array[i];
+            countGenap++;
+        }
+        else
+        {
+            bilanganGanjil[countGanjil] = array[i];
+            countGanjil++;
+        }
+    }
+    cout << endl;
+
+    // menampilkan keseluruhan array
+    cout << "Data Array : ";
+    for (int i = 0; i < indeks; i++)
+    {
+        cout << array[i] << " ";
+    }
+    cout << endl;
+
+    // menampilkan nomor genap
+    cout << "Nomor Genap : ";
+    for (int i = 0; i < countGenap; i++)
+    {
+        cout << bilanganGenap[i] << " ";
+    }
+    cout << endl;
+
+    // menampilkan nomor ganjil
+    cout << "Nomor Ganjil : ";
+    for (int i = 0; i < countGanjil; i++)
+    {
+        cout << bilanganGanjil[i] << " ";
+    }
+    cout << endl;
 }
 ```
 ### Output
 ![Output 1](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%201%20-Tipe%20Data/gambar/Output1.png)
 Kode diatas adalah contoh penggunaan dari tipe data primitif. Fungsi pertama digunakan untuk mengecek angka apakah ganjil atau genap sedangkan fungsi kedua untuk membandingkan antara angka pertama atau kedua. 
 Kesimpulanya adalah tipe data ini merupakan tipe data default, yang mana tidak ada fleksibilitas dalam penggunaanya namun tipe data ini yang menjadi pondasi dari seluruh program c++.
-### Full code Screenshot
-![Code 1](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%201%20-Tipe%20Data/gambar/Code1.png)
 
-### 2. Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya
+### 2. Buatlah program Input array tiga dimensi (seperti pada guided) tetapi jumlah atau ukuran elemennya diinputkan oleh user!
 ``` c++
 #include <iostream>
-#include <stdio.h>
 
 using namespace std;
 
-// inisialisasi class
-class Game
-{
-public:
-    string nama;
-    string genre;
-    int tahun;
-    string size;
-
-    // fungsi menampilkan info class
-    void displayInfo()
-    {
-        cout << "Game " << nama << " dengan genre " << genre << " di publish tahun " << tahun << " dengan size " << size << endl;
-    }
-};
-
-// inisialisasi struct
-struct Hero
-{
-    const char *name;
-    const char *role;
-    string type;
-};
-
 int main()
 {
-    // deklarasi class
-    Game game1;
-
-    game1.nama = "Dark Souls";
-    game1.genre = "RPG Linear";
-    game1.tahun = 2018;
-    game1.size = "9,2 GB";
-    game1.displayInfo();
-
-    // deklarasi struct
-    Hero hero1;
-    hero1.name = "John Dark Soul";
-    hero1.role = "Sorcerer";
-    hero1.type = "DPS";
-
+    int d1, d2, d3;
+    for (int i = 1; i <= 3; i++)
+    {
+        cout << "Masukkan indeks dimensi ke-" << i << ": ";
+        if (i == 1)
+        {
+            cin >> d1;
+        }
+        else if (i == 2)
+        {
+            cin >> d2;
+        }
+        else
+        {
+            cin >> d3;
+        }
+    }
     cout << endl;
-    cout << "Karakter" << endl;
-    cout << "Name: " << hero1.name << endl;
-    cout << "Role: " << hero1.role << endl;
-    cout << "Type: " << hero1.type << endl;
 
-    return 0;
+    // deklarasi array
+    int arr[d1][d2][d3];
+
+    // input elemen
+    for (int x = 0; x < d1; x++)
+    {
+        for (int y = 0; y < d2; y++)
+        {
+            for (int z = 0; z < d3; z++)
+            {
+                cout << "Input Array[" << x << "][" << y << "][" << z << "] = " << ends;
+                cin >> arr[x][y][z];
+            }
+        }
+
+        cout << endl;
+    }
+
+    // input elemen
+    cout << endl;
+    for (int x = 0; x < d1; x++)
+    {
+        for (int y = 0; y < d2; y++)
+        {
+            for (int z = 0; z < d3; z++)
+            {
+                cout << "Data Array[" << x << "][" << y << "][" << z << "] = " << arr[x][y][z] << ends;
+                cout << endl;
+            }
+        }
+
+        cout << endl;
+    }
+
+    // output array
+    for (int x = 0; x < d1; x++)
+    {
+        for (int y = 0; y < d2; y++)
+        {
+            for (int z = 0; z < d3; z++)
+            {
+                cout << arr[x][y][z] << " " << ends;
+            }
+
+            cout << endl;
+        }
+
+        cout << endl;
+    }
 }
 ```
 ### Output
 ![Output 2](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%201%20-Tipe%20Data/gambar/Output2.png)
 Class merupakan tipe data defaultnya adalah private, jadi jika objek anggota dari class itu sendiri ingin dipublikasikan, maka harus menyertakan public di potongan kode tersebut Sedangakan Struct atau structure merupakan tipe data yang menyimpan beberapa data dengan default public, Struktur bermanfaat untuk mengelompokan sejumlah data dengan tipe yang berlainan[1]. Kode diatas merupakan contoh penggunaan class dan struct, pada class menyertakan public agar kode bisa diakses di int main dan pada struct karena defaultnya public jadi langsung inisialisasi variabel.
-### Full code Screenshot
-![Code 2](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%201%20-Tipe%20Data/gambar/Code2.png)
 
-### 3. Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map
+### 3. Buatlah program menu untuk mencari nilai Maksimum, Minimum dan Nilai rata – rata dari suatu array dengan input yang dimasukan oleh user! 
 ```c++
 #include <iostream>
-#include <map>
 
 using namespace std;
 
+int indeks;
+int input;
+float rataRata;
+int pilihanMenu;
+int Min;
+int Max;
+
 int main()
 {
-    // insialisasi dan deklarasi map
-    map<string, int> dataDamage;
 
-    // isi value map
-    dataDamage["Strength"] = 650;
-    dataDamage["Dexterity"] = 500;
-    dataDamage["Intellegence"] = 800;
-    dataDamage["Faith"] = 700;
+    cout << "Masukkan indeks array: ";
+    cin >> indeks;
+    int bil[indeks];
 
-    cout << "Informasi Damage Build" << endl;
-    
-    // perulangan range based loop untuk menampilkan map
-    for (auto& entry : dataDamage) {
-        cout << "Build " << entry.first << " Damage: " << entry.second << endl;
-    }
+    do
+    {
+        cout << endl;
+        cout << "Menu" << endl;
+        cout << "1. Input Array" << endl;
+        cout << "2. Tampil Array" << endl;
+        cout << "3. Cari Nilai Minimum" << endl;
+        cout << "4. Cari Nilai Maksimum" << endl;
+        cout << "5. Hitung Rata-rata" << endl;
+        cout << "6. Exit" << endl;
+        cout << "Masukkan Pilihan : ";
+        cin >> pilihanMenu;
+
+        switch (pilihanMenu)
+        {
+        case 1:
+            cout << endl;
+            for (int i = 0; i < indeks; i++)
+            {
+                cout << "Masukkan bilangan ke-" << i + 1 << " : ";
+                cin >> input;
+
+                bil[i] = input;
+            }
+
+            break;
+        case 2:
+            cout << endl;
+            for (int i = 0; i < indeks; i++)
+            {
+                cout << bil[i] << ", ";
+            }
+            cout << endl;
+
+            break;
+        case 3:
+            cout << endl;
+            Min = bil[0];
+
+            for (int i = 0; i < indeks; i++)
+            {
+                if (bil[i] < Min)
+                {
+                    Min = bil[i];
+                }
+            }
+            cout << "Nilai Minimum : " << Min;
+            cout << endl;
+
+            break;
+        case 4:
+            cout << endl;
+            Max = 0;
+
+            for (int i = 0; i < indeks; i++)
+            {
+                if (bil[i] > Max)
+                {
+                    Max = bil[i];
+                }
+            }
+            cout << "Nilai Maksimum : " << Max;
+            cout << endl;
+
+            break;
+        case 5:
+            cout << endl;
+
+            for (int i = 0; i < indeks; i++)
+            {
+                rataRata += bil[i];
+            }
+            cout << "Rata rata : " << rataRata / indeks;
+            cout << endl;
+            cout << endl;
+
+            break;
+        case 6:
+            return 0;
+            break;
+        default:
+            cout << "Pilihan yang anda input tidak valid" << endl;
+            break;
+        };
+
+    } while (pilihanMenu != 6);
 
     return 0;
 }
+
 ```
 ### Output
 ![Output 3](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%201%20-Tipe%20Data/gambar/Output3.png)
 Kode diatas merupakan penggunaan map dalam c++, dimulai dari insialisasi map beserta tipe datanya kemudian pengisian map pada int main lalu terakhir dengan perulangan for range based loop dengan menggunakan `auto` mencetak map tersebut. Perbedaan antara array dan map terletak pada tipe data indeks pada map yang memungkinkan untuk berupa tipe data selain integer[2].
-### Full code Screenshot
-![Code 3](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%201%20-Tipe%20Data/gambar/Code3.png)
 
 ## Kesimpulan
 Tipe data adalah klasifikasi atau pengelompokan data berdasarkan sifat atau ciri-ciri tertentu. Setiap jenis tipe data memiliki fungsi yang berbeda-beda yang memungkinkan programmer untuk lebih leluasa membuat atau menciptakan suatu logika program yang lebih kompleks dan efisien juga digunakan oleh compiler untuk memahami cara data tersebut digunakan dalam program. Ada tiga tipe data utama, yaitu primitif, abstak, dan koleksi. 
