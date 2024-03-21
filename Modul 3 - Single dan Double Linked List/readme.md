@@ -4,10 +4,11 @@
 
 ## Dasar Teori
 ### Linked List
-Linked list adalah strukur data linier berbentuk rantai simpul di mana setiap simpul menyimpan 2 item, yaitu nilai data dan pointer ke simpul elemen berikutnya. Berbeda dengan array, elemen linked list tidak ditempatkan dalam alamat memori yang berdekatan melainkan elemen ditautkan menggunakan pointer. Ukuran elemen dari linked list dapat bertambah secara dinamis dan mudah untuk menyisipkan dan menghapus elemen karena tidak seperti array, kita hanya perlu mengubah pointer elemen sebelumnya dan elemen berikutnya untuk menyisipkan atau menghapus elemen.[1]
+Linked list adalah strukur data linier berbentuk rantai simpul di mana setiap simpul menyimpan 2 item, yaitu nilai data dan pointer ke simpul elemen berikutnya. Berbeda dengan array, elemen linked list tidak ditempatkan dalam alamat memori yang berdekatan melainkan elemen ditautkan menggunakan pointer. Ukuran elemen dari linked list dapat bertambah secara dinamis dan mudah untuk menyisipkan dan menghapus elemen karena tidak seperti array, kita hanya perlu mengubah pointer elemen sebelumnya dan elemen berikutnya untuk menyisipkan atau menghapus elemen.[1] Terdapat 2 tipe linked list yaitu Non-Circular dan Circular, Non-circular berarti pointer penunjuk dari tail akan merujuk ke NULL sedangkan Circular pointernya akan mengarah ke node dari head.
 ### Single Linked List
-
+Konsep single linked list bagaikan sungai yang memiliki awal dan akhir, yang mana juga hanya bergerak ke satu arah artinya pointer-pointer yang menghubungkan antara node hanya merujuk ke node selanjutnya. Pada single linked list pointer penunjuk dari tail merujuk ke NULL.
 ### Double Linked List
+Berbeda dengan single linked list, double linked list merupakan kebalikanya artinya pointer-pointer penunjuknya ada yang mengrah ke node selanjutnya ataupun node sebelumnya. Sehingga memberikan fleksibilitas tambahan untuk mengolah linked list tersebut.
 
 ## Guided
 ### 1. Latihan Single Linked List
@@ -358,6 +359,7 @@ int main()
     return 0;
 }
 ```
+![Output 0.1](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%203%20-%20Single%20dan%20Double%20Linked%20List/gambar/Output0.1.png)
 Kode diatas merupakan implementasi dari penggunaan `single linked list`. Di dalam kode tersebut terdapat banyak prosedur dan fungsi untuk mengolah single linked list seperti Insert, Delete, Update, countList. Masing-masing memiliki kegunaanya sendiri, seperti namanya Menambahkan data, Menghapus data, Mengupdate data, baik di depan atau belakang atau tengah serta lainya.
 
 ### 2. Latihan Double Linked List
@@ -533,6 +535,7 @@ int main() {
     return 0;
 }
 ```
+![Output 0.2](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%203%20-%20Single%20dan%20Double%20Linked%20List/gambar/Output0.2.png)
 Kode diatas merupakan implementasi dari penggunaan `Double linked list`, Fungsi dan posedur di kode tersebut kurang lebih sama namun yang membedakan disini Linked list dibungkus di struktur Class yang membuat kode lebih efisien dan mudah digunakan.
 
 ## Unguided
@@ -1342,19 +1345,9 @@ int main()
 Kode diatas merupakan implementasi dari penggunaan array `Double Linked List`. Di sini Linked List di bungkus dengan Class, hal ini memudahkan untuk pemanggilan Linked List. Fungsi dan prosdeur juga masih sama seperti pada `Unguided 1` . Pada kode tersebut user diberikan menu yang kurang lebih fungsinya sama yaitu mengarahkan ke salah satu fungsi atau prosedur yang sudah dibuat.
 
 ## Kesimpulan
-Array adalah struktur data mendasar yang terdiri dari elemen-elemen yang memiliki indeks numerik, dimulai dari 0 dan terus bertambah sesuai panjang data. Meskipun penggunaan memori array relatif sedikit, fleksibilitasnya terbatas. Beberapa tipe array yang umum digunakan adalah array satu dimensi, array dua dimensi dan array multidimensi. Berikut beberapa kelebihan dan kekurangan array: 
-- Kelebihan Array :
-1. Array sangat  baik jika digunakan untuk mengakses secara acak. Karena secara acak index di array dapat secara langsung diakses tanpa melalui index lain
-2. Jika berada di suatu lokasi index sangatlah mudah untuk mencari ke index tersebut
-3. Jika index array adalah nilai - nilai tersendiri dan semuanya harus terjaga, maka penggunaan penyimpanannya sangatlah tepat
-4. Tidak mudah crash
-5. Cepatnya mengeksekusi data
-6. Tidak banyak memekan memory
-
-- Kekurangan Array :
-1. Ukuran file yang sangatlah besar
-2. Tidak efisien dalam penggunaan memory
-3. jika array bertipe homogen , maka user tidak dapat mempunyai arry diman satu index adalah karakter utamanya [1]
+Link adalah tempat penyimpanan alamat simpulnya (pointer). Linked list adalah sebuah struktur untuk menyimpan data yang bersifat dinamik. Beberapa operasi dapat diterapkan pada linked list seperti sisip(insert), hapus(delete), dan update. Operasi-operasi yang ada pada linked list relatif lebih sulit jika dibandingkan dengan operasi-operasi pada struktur yang statis.[2] 
+Adapun perbedaan dari struktur data lainya seperti array yaitu linked list memungkinkan penyimpanan memori yang acak dan fleksibilitas yang lebih tinggi dibandingkan array walaupun mengorbankan dari penyimpanan dalam memori namun linked list bisa menjadi solusi untuk data yang memang perlu fleksibitas dalam mengolahnya.
 
 ## Referensi
 [1] Trivusi. Struktur Data Linked List: Pengertian, Karakteristik, dan Jenis-jenisnya. www.trivusi.web.id; 2022. https://www.trivusi.web.id/2022/07/struktur-data-linked-list.html
+[2] Kurniman Putra, Agung. Single Linked List. Single Linked List: Fakultas Komputer. (2019)
