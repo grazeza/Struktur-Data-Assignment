@@ -3,13 +3,11 @@
 
 
 ## Dasar Teori
-Array adalah struktur data mendasar yang terdiri dari elemen-elemen yang memiliki indeks numerik, dimulai dari 0 dan terus bertambah sesuai panjang data. Meskipun penggunaan memori array relatif sedikit, fleksibilitasnya terbatas. Berikut adalah beberapa tipe array yang umum digunakan:
-### - Array Satu Dimensi
-Array satu dimensi adalah kumpulan data dengan tipe yang sama yang disusun dalam suatu struktur. Dalam analogi tabel, array satu dimensi dapat dianggap sebagai tabel dengan hanya satu kolom dan beberapa baris. Setiap elemen dalam array memiliki indeks numerik yang dimulai dari 0 dan terus bertambah secara berurutan. 
-### - Array Dua Dimensi
-Sama seperti array satu dimensi, array dua dimensi berarti memunkinkan array untuk memiliki lebih dari satu kolom atau baris.
-### - Array Multidimensi
-Array multidimensi memperluas konsep array dua dimensi dengan memungkinkan untuk menyimpan data dalam tiga dimensi atau lebih. Ini berarti array multidimensi dapat memiliki lebih dari dua indeks untuk mengakses elemen-elemennya. Contoh multidimensi lainnya adalah array tiga dimensi, empat dimensi, dan seterusnya. Array multidimensi memungkinkan penyimpanan data yang lebih besar dan kompleks.
+### Linked List
+Linked list adalah strukur data linier berbentuk rantai simpul di mana setiap simpul menyimpan 2 item, yaitu nilai data dan pointer ke simpul elemen berikutnya. Berbeda dengan array, elemen linked list tidak ditempatkan dalam alamat memori yang berdekatan melainkan elemen ditautkan menggunakan pointer. Ukuran elemen dari linked list dapat bertambah secara dinamis dan mudah untuk menyisipkan dan menghapus elemen karena tidak seperti array, kita hanya perlu mengubah pointer elemen sebelumnya dan elemen berikutnya untuk menyisipkan atau menghapus elemen.[1]
+### Single Linked List
+
+### Double Linked List
 
 ## Guided
 ### 1. Latihan Single Linked List
@@ -997,7 +995,7 @@ int main()
 #### Tampilan seluruh data 
 ![Output 1.6](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%203%20-%20Single%20dan%20Double%20Linked%20List/gambar/Output1.6.png)
 
-Kode diatas adalah contoh penggunaan `array satu dimensi` dan algoritma `searching`. Pertama program akan meminta user unutk menentukan indeks array yang nanti akan diinputkan user, lalu program akan mengecek nilai yang diinputkan tadi apakah bernilai ganjil atau genap yang kemudian akan dimasukkan ke array yang sudah diinisialisasi manual. Terakhir program akan mencetak array keseluruhan, array bilangan genap, dan array bilangan ganjil.
+Kode diatas adalah contoh penggunaan `Single Linked List` yang meliputi beberapa fungsi dan prosedur yang normal seperti Insert, Delete, dan Update. Pada kode tersebut user diberikan sebuah menu yang dimana user bisa memilih diantara menu tersebut, menu-menu tadi mengarahkan ke salah satu prosedur atau fungsi. Setelah melakukan beberapa pengolahan pada Linked List user bisa mencetak datanya.
 
 ### 2. Modifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama produk dan harga.
 ``` c++
@@ -1341,7 +1339,7 @@ int main()
 #### Tampilan seluruh data
 ![Output 2.5](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%203%20-%20Single%20dan%20Double%20Linked%20List/gambar/Output2.5.png)
 
-Kode diatas merupakan implementasi dari penggunaan array `multidimensi`, kode tersebut berfungsi untuk mengisi array tiga dimensi yang indeks dan isinya dinputkan secara manual oleh user.
+Kode diatas merupakan implementasi dari penggunaan array `Double Linked List`. Di sini Linked List di bungkus dengan Class, hal ini memudahkan untuk pemanggilan Linked List. Fungsi dan prosdeur juga masih sama seperti pada `Unguided 1` . Pada kode tersebut user diberikan menu yang kurang lebih fungsinya sama yaitu mengarahkan ke salah satu fungsi atau prosedur yang sudah dibuat.
 
 ## Kesimpulan
 Array adalah struktur data mendasar yang terdiri dari elemen-elemen yang memiliki indeks numerik, dimulai dari 0 dan terus bertambah sesuai panjang data. Meskipun penggunaan memori array relatif sedikit, fleksibilitasnya terbatas. Beberapa tipe array yang umum digunakan adalah array satu dimensi, array dua dimensi dan array multidimensi. Berikut beberapa kelebihan dan kekurangan array: 
