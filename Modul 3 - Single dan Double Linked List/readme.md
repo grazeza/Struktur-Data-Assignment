@@ -1006,6 +1006,9 @@ Kode diatas adalah contoh penggunaan `array satu dimensi` dan algoritma `searchi
 
 using namespace std;
 
+// Fahreza Ilham Wicaksono 🗿
+// 2311102191
+
 class Node
 {
 public:
