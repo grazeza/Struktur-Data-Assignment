@@ -6,6 +6,7 @@ using namespace std;
 // Fahreza Ilham Wicaksono 🗿
 // 2311102191
 
+// inisialisasi class Node
 class Node
 {
 public:
@@ -15,6 +16,7 @@ public:
     Node *next;
 };
 
+// inisialisasi class Node
 class DoubleLinkedList
 {
 public:
@@ -203,6 +205,7 @@ public:
         tail = nullptr;
     }
 
+    // mencetak data linked list dalam bentuk tabel
     void display()
     {
         Node *current = head;
@@ -226,6 +229,7 @@ public:
 
 int main()
 {
+    // deklarasi linked list
     DoubleLinkedList list;
 
     while (true)
