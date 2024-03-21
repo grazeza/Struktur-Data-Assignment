@@ -985,17 +985,18 @@ int main()
 }
 ```
 ### Output
-## Pengisian data awal
+#### Pengisian data awal
 ![Output 1.1](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%203%20-%20Single%20dan%20Double%20Linked%20List/gambar/Output1.1.png)
-## Penghapusan data
+#### Penghapusan data
 ![Output 1.2](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%203%20-%20Single%20dan%20Double%20Linked%20List/gambar/Output1.2.png)
-## Penambahan data 
+#### Penambahan data 
 ![Output 1.3](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%203%20-%20Single%20dan%20Double%20Linked%20List/gambar/Output1.3.png)
 ![Output 1.4](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%203%20-%20Single%20dan%20Double%20Linked%20List/gambar/Output1.4.png)
-## Update data 
+#### Update data 
 ![Output 1.5](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%203%20-%20Single%20dan%20Double%20Linked%20List/gambar/Output1.5.png)
-## Tampilan seluruh data 
+#### Tampilan seluruh data 
 ![Output 1.6](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%203%20-%20Single%20dan%20Double%20Linked%20List/gambar/Output1.6.png)
+
 Kode diatas adalah contoh penggunaan `array satu dimensi` dan algoritma `searching`. Pertama program akan meminta user unutk menentukan indeks array yang nanti akan diinputkan user, lalu program akan mengecek nilai yang diinputkan tadi apakah bernilai ganjil atau genap yang kemudian akan dimasukkan ke array yang sudah diinisialisasi manual. Terakhir program akan mencetak array keseluruhan, array bilangan genap, dan array bilangan ganjil.
 
 ### 2. Modifikasi Guided Double Linked List dilakukan dengan penambahan operasi untuk menambah data, menghapus, dan update di tengah / di urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya menampilkan Nama produk dan harga.
@@ -1326,16 +1327,17 @@ int main()
 }
 ```
 ### Output
-## Penginputan data awal
+#### Penginputan data awal
 ![Output 2.1](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%203%20-%20Single%20dan%20Double%20Linked%20List/gambar/Output2.1.png)
-## Penambahan data 
+#### Penambahan data 
 ![Output 2.2](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%203%20-%20Single%20dan%20Double%20Linked%20List/gambar/Output2.2.png)
-## Penghapusan data 
+#### Penghapusan data 
 ![Output 2.3](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%203%20-%20Single%20dan%20Double%20Linked%20List/gambar/Output2.3.png)
-## Update data 
+#### Update data 
 ![Output 2.4](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%203%20-%20Single%20dan%20Double%20Linked%20List/gambar/Output2.4.png)
-## Tampilan seluruh data
+#### Tampilan seluruh data
 ![Output 2.5](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%203%20-%20Single%20dan%20Double%20Linked%20List/gambar/Output2.5.png)
+
 Kode diatas merupakan implementasi dari penggunaan array `multidimensi`, kode tersebut berfungsi untuk mengisi array tiga dimensi yang indeks dan isinya dinputkan secara manual oleh user.
 
 ## Kesimpulan
