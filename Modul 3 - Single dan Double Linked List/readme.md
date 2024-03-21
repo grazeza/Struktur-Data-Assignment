@@ -1357,4 +1357,4 @@ Array adalah struktur data mendasar yang terdiri dari elemen-elemen yang memilik
 3. jika array bertipe homogen , maka user tidak dapat mempunyai arry diman satu index adalah karakter utamanya [1]
 
 ## Referensi
-[1] Taufiqqurahman, M.. Kelebihan dan Kekurangan Array. boltremjaya.wordpress.com; 2021. https://kelompok1ka2.blogspot.com/2015/10/kelebihan-dan-kekurangan-array.html
+[1] Taufiqqurahman, M.. Kelebihan dan Kekurangan Array. boltremjaya.wordpress.com; 2021. https://www.trivusi.web.id/2022/07/struktur-data-linked-list.html
