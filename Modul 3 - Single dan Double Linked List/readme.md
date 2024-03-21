@@ -360,6 +360,7 @@ int main()
 }
 ```
 ![Output 0.1](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%203%20-%20Single%20dan%20Double%20Linked%20List/gambar/Output0.1.png)
+
 Kode diatas merupakan implementasi dari penggunaan `single linked list`. Di dalam kode tersebut terdapat banyak prosedur dan fungsi untuk mengolah single linked list seperti Insert, Delete, Update, countList. Masing-masing memiliki kegunaanya sendiri, seperti namanya Menambahkan data, Menghapus data, Mengupdate data, baik di depan atau belakang atau tengah serta lainya.
 
 ### 2. Latihan Double Linked List
@@ -536,6 +537,7 @@ int main() {
 }
 ```
 ![Output 0.2](https://raw.githubusercontent.com/grazeza/Struktur-Data-Assignment/main/Modul%203%20-%20Single%20dan%20Double%20Linked%20List/gambar/Output0.2.png)
+
 Kode diatas merupakan implementasi dari penggunaan `Double linked list`, Fungsi dan posedur di kode tersebut kurang lebih sama namun yang membedakan disini Linked list dibungkus di struktur Class yang membuat kode lebih efisien dan mudah digunakan.
 
 ## Unguided
