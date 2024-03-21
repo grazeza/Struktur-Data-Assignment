@@ -1352,4 +1352,5 @@ Adapun perbedaan dari struktur data lainya seperti array yaitu linked list memun
 
 ## Referensi
 [1] Trivusi. Struktur Data Linked List: Pengertian, Karakteristik, dan Jenis-jenisnya. www.trivusi.web.id; 2022. https://www.trivusi.web.id/2022/07/struktur-data-linked-list.html
+
 [2] Kurniman Putra, Agung. Single Linked List. Single Linked List: Fakultas Komputer. (2019)
